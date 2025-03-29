@@ -12,7 +12,7 @@ public class ValidPalindrome {
 
     public static Boolean isPalindrome(String s) {
 
-        if (s == null || s.isBlank()) {
+        if (s == null || s.isEmpty()) {
             return true;
         }
 
