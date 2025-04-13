@@ -12,5 +12,6 @@ public class SecondHighestSalary {
                 .skip(1)
                 .findFirst();
 
+        secondHighest.ifPresent(salary -> System.out.println("Second Highest Salary: " + salary));
     }
 }
