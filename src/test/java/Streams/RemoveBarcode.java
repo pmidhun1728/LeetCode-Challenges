@@ -48,6 +48,9 @@ public class RemoveBarcode {
             sampleMap.put(sample.getBarcode(), sample.getId());
         }
 
-        
+        // Step 5: Print map values
+        for (Map.Entry<String, Integer> entry : sampleMap.entrySet()) {
+            System.out.println("Barcode: " + entry.getKey() + ", ID: " + entry.getValue());
+        }
     }
 }
