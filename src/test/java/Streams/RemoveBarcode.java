@@ -42,7 +42,12 @@ public class RemoveBarcode {
                 .orElse(0); // fallback to 0 if list is empty
         sampleList.add(new Sample("ABC", maxId + 1));
 
-       
+        // Step 4: Convert to Map<barcode, id>
+        Map<String, Integer> sampleMap = new HashMap<>();
+        for (Sample sample : sampleList) {
+            sampleMap.put(sample.getBarcode(), sample.getId());
         }
+
+        
     }
 }
