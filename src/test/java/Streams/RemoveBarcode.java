@@ -32,6 +32,9 @@ public class RemoveBarcode {
         sampleList.add(new Sample("ABC", 3));
         sampleList.add(new Sample("XYZ", 4));
 
+        // Step 2: Remove samples where barcode is not "ABC"
+        sampleList.removeIf(sample -> !sample.getBarcode().equals("ABC"));
+
         
     }
 }
