@@ -25,5 +25,13 @@ public class RemoveBarcode {
     }
 
     public static void main(String[] args) {
+        // Step 1: Create list and add samples
+        List<Sample> sampleList = new ArrayList<>();
+        sampleList.add(new Sample("ABC", 1));
+        sampleList.add(new Sample("DEF", 2));
+        sampleList.add(new Sample("ABC", 3));
+        sampleList.add(new Sample("XYZ", 4));
+
+        
     }
 }
