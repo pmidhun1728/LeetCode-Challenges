@@ -35,6 +35,14 @@ public class RemoveBarcode {
         // Step 2: Remove samples where barcode is not "ABC"
         sampleList.removeIf(sample -> !sample.getBarcode().equals("ABC"));
 
-        
+        // Step 3: Add one more sample with barcode "ABC" and id = maxId + 1
+        int maxId = sampleList.stream()
+                .mapToInt(Sample::getId)
+                .max()
+                .orElse(0); // fallback to 0 if list is empty
+        sampleList.add(new Sample("ABC", maxId + 1));
+
+       
+        }
     }
 }
