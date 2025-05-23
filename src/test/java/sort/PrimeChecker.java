@@ -15,6 +15,14 @@ public class PrimeChecker {
         return true;
     }
 
+    public static void main(String[] args) {
+        int input = 29;
 
+        if (isPrime(input)) {
+            System.out.println(input + " is a prime number.");
+        } else {
+            System.out.println(input + " is not a prime number.");
+        }
+    }
 }
 
